@@ -15,7 +15,6 @@ class App < Sinatra::Base
   end
 
   get '/first_exercise' do
-    binding.pry
     "Your first exercise will be to set your session key-value pair.\nIn the route: get '/set', write a line of code that sets the :foo key of the session hash equal to 'hello'.\nThen, navigate to the '/set' path."
   end
 
@@ -27,6 +26,7 @@ class App < Sinatra::Base
     else
       "Session value has not been set!"
     end
+    binding.pry
   end
 
   get '/fetch' do
